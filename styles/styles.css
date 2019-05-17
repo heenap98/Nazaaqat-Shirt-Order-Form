@@ -1,5 +1,6 @@
 html {
-  background: #FFB6C1;
+  height: 100%;
+  background: linear-gradient(#FFB6C1, white);
   text-align: center;
   font-family: "Playfair Display";
 /*   Use candyland's font */
