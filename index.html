@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  </head>
+  <h1 id="title">Nazaaqat Shirt Form</h1>
+<!--   Insert picture of Nazaaqat's logo -->
+  
+  <div id="outer-form">
+    <p id="description">Order your Nazaaqat Shirt now! Shirts are only <strong>$10</strong>.</p>
+    <form id="survey-form">
+      <div class="row">
+        <label id="name-label" class="labels" for="name">* Name:</label>
+        <div class="inputs">
+          <input id="name" type="text" placeholder="Enter your name" name="name" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <label id="email-label" class="labels" for="email">* Email:</label>
+        <div class="inputs">
+          <input id="email" type="email" placeholder="Enter your Email" name="email" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <label id="number-label" class="labels" for="quantity">* Quantity:</label>
+        <div class="inputs">
+          <input id="number" type="number" placeholder="Quantity between 1-50" min="1" max="50" name="quantity" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <label id="dropdown-label" class="labels" for="size">* Size:</label>
+        <div class="inputs">
+          <select id="dropdown" name="size">
+            <option disabled value selected>Select a Size</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+          </select>
+        </div>
+      </div>
+      
+      <div class="row">
+        <label class="labels" for="payment-method">* Payment Method:</label>
+        <div class="inputs">
+          <ul>
+            <li><label><input type="radio" name="payment-method" value="venmo">Venmo</label></li>
+            <li><label><input type="radio" name="payment-method" value="cash">Cash</label></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <label class="labels" for="venmo-handle">Venmo Username:</label>
+        <div class="inputs">
+          <input type="text" placeholder="Enter your Venmo username" name="venmo-handle" required>
+        </div>
+      </div>
+      
+      <div class="row">
+        <label id="comments-label" class="labels" for="comments">Additional Comments or Suggestions:</label>
+        <div class="inputs">
+          <textarea name="comments" placeholder="Enter your comments or suggestions"></textarea>
+        </div>
+      </div>
+      
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </div>
+</html>
